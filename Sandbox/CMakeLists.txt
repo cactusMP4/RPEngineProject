@@ -11,6 +11,7 @@ target_link_libraries(Sandbox PRIVATE RPEngine)
 # Include engine headers
 target_include_directories(Sandbox PRIVATE
         ${CMAKE_SOURCE_DIR}/RPEngine/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/spdlog/include
 )
 
 # Put Sandbox outputs into its own bin/bin-int folder

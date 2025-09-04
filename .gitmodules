@@ -1,0 +1,3 @@
+[submodule "RPEngine/3dParty/spdlog"]
+	path = RPEngine/3dParty/spdlog
+	url = https://github.com/gabime/spdlog

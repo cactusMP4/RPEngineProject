@@ -1,0 +1,16 @@
+# ninja log v6
+7	867	7787013211596623	RPEngine/CMakeFiles/RPEngine.dir/src/Application.cpp.obj	6ea87ae37a873624
+39	23462	7787023372281639	Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.obj	5806faef00b773fb
+24	40218	7787022035246636	RPEngine/CMakeFiles/RPEngine.dir/src/Logger.cpp.obj	a0ce5aabd210b6be
+15	19168	7787024018146652	RPEngine/CMakeFiles/RPEngine.dir/src/Logger.cpp.obj	a0ce5aabd210b6be
+19169	20696	7787024223866565	C:/Users/User/Documents/RPEngine/RPEngineProject/bin/RPEngine/libRPEngine.dll	cf2e6b0217b26359
+19169	20696	7787024223866565	C:/Users/User/Documents/RPEngine/RPEngineProject/bin-int/RPEngine/libRPEngine.dll.a	cf2e6b0217b26359
+20697	21755	7787024224941636	C:/Users/User/Documents/RPEngine/RPEngineProject/bin/Sandbox/Sandbox.exe	7d7b92b6a516917f
+11	21438	7787024395466578	RPEngine/CMakeFiles/RPEngine.dir/src/Logger.cpp.obj	a0ce5aabd210b6be
+12	25547	7787026360266903	RPEngine/CMakeFiles/RPEngine.dir/src/Logger.cpp.obj	a0ce5aabd210b6be
+17	22470	7787028337301902	RPEngine/CMakeFiles/RPEngine.dir/src/Logger.cpp.obj	a0ce5aabd210b6be
+22472	24410	7787028578966592	C:/Users/User/Documents/RPEngine/RPEngineProject/bin/RPEngine/libRPEngine.dll	cf2e6b0217b26359
+22472	24410	7787028578966592	C:/Users/User/Documents/RPEngine/RPEngineProject/bin-int/RPEngine/libRPEngine.dll.a	cf2e6b0217b26359
+24410	25341	7787028581206618	C:/Users/User/Documents/RPEngine/RPEngineProject/bin/Sandbox/Sandbox.exe	7d7b92b6a516917f
+12	23407	7787028688371584	Sandbox/CMakeFiles/Sandbox.dir/src/Sandbox.cpp.obj	5806faef00b773fb
+23410	24494	7787028922326604	C:/Users/User/Documents/RPEngine/RPEngineProject/bin/Sandbox/Sandbox.exe	7d7b92b6a516917f
