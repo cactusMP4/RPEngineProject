@@ -1,30 +1,37 @@
 #pragma once
-#include "RPEngine.h"
+#include "Event.h"
+#include "Logger.h"
 
 #include "GLFW/glfw3.h"
 
 namespace rpe {
     class Window {
     public:
+        using EventCallbackFn = std::function<void(Event&)>;
+
         Window(std::string title = "Rainbow powered app", unsigned int width = 800, unsigned int height = 600) : title(std::move(title)), width(width), height(height) {};
 
-        bool Init();
+        void Init();
         void Update() const;
+        void Destroy() const;
 
         GLFWwindow* getWindow() const { return window; }
 
-        unsigned int GetWidth() const { return width; }
+        int GetWidth() const { return width; }
         void SetWidth(const unsigned int newWidth) { this->width = newWidth; }
-        unsigned int GetHeight() const { return height; }
+        int GetHeight() const { return height; }
         void SetHeight(const unsigned int newHeight) { this->height = newHeight; }
 
         std::string GetTitle() const { return title; }
         void SetTitle(const std::string& newTitle) { this->title = newTitle; }
+
+        EventCallbackFn getEventCallBack() {return eventCallback;}
+        void SetEventCallback(const EventCallbackFn& newCallback) { eventCallback = newCallback; }
     private:
         GLFWwindow* window;
         std::string title;
-        unsigned int width, height;
+        int width, height;
         bool inited = false;
-        bool running = true;
+        EventCallbackFn eventCallback;
     };
 }

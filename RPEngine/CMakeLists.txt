@@ -5,7 +5,8 @@ add_library(RPEngine SHARED
         src/Application.cpp
         src/Logger.cpp
         src/Window.cpp
-        include/Window.h)
+        include/Window.h
+)
 
 target_precompile_headers(RPEngine PUBLIC include/rpepch.h)
 

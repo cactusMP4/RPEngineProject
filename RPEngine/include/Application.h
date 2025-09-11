@@ -1,11 +1,15 @@
 #pragma once
+#include "Window.h"
 
 namespace rpe {
     class Application {
     public:
         Application();
-        ~Application();
+        virtual ~Application();
         void run();
+    private:
+        std::unique_ptr<Window> window;
+        bool running = false;
     };
 }
 

@@ -6,12 +6,17 @@
 
 namespace rpe {
     Application::Application() {
-
+        window = std::unique_ptr<Window>(new Window());
+        window->Init();
     }
     Application::~Application() {
-
+        window->Destroy();
     }
+
     void Application::run() {
-        while (true) {}
+        running = true;
+        while (running) {
+            window->Update();
+        }
     }
 }
