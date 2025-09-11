@@ -1,6 +1,6 @@
 #pragma once
 
-#include <memory>
+#include "rpepch.h"
 #include <spdlog/spdlog.h>
 
 namespace rpe {

@@ -3,7 +3,9 @@ project(RPEngine)
 # Library
 add_library(RPEngine SHARED
         src/Application.cpp
- "src/Logger.cpp"  "include/Logger.h")
+        src/Logger.cpp)
+
+target_precompile_headers(RPEngine PUBLIC include/rpepch.h)
 
 target_include_directories(RPEngine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include

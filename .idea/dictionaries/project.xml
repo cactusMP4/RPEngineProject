@@ -3,6 +3,7 @@
     <words>
       <w>outputconfig</w>
       <w>rpengine</w>
+      <w>rpepch</w>
     </words>
   </dictionary>
 </component>
