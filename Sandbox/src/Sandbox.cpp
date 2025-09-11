@@ -1,14 +1,10 @@
 #include <RPEngine.h>
 
-class Sandbox : public rpe::Application {
-public:
-    Sandbox() {};
-    ~Sandbox() {};
-};
+class Sandbox : public rpe::Application {};
 
 int main() {
     rpe::Logger::Init();
-    rpe::Logger::GetClientLogger()->info("salam");
+    RPE_INFO("zdarov");
 
     auto* sandbox = new Sandbox();
     sandbox->run();
