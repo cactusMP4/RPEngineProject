@@ -1,6 +1,5 @@
 #pragma once
 
-#include "rpepch.h"
 #include <spdlog/spdlog.h>
 
 namespace rpe {
@@ -21,3 +20,9 @@ namespace rpe {
 #define RPE_WARN(...)  rpe::Logger::GetClientLogger()->warn(__VA_ARGS__)
 #define RPE_ERROR(...) rpe::Logger::GetClientLogger()->error(__VA_ARGS__)
 #define RPE_FATAL(...) rpe::Logger::GetClientLogger()->fatal(__VA_ARGS__)
+
+#define RPE_CORE_TRACE(...) rpe::Logger::GetCoreLogger()->trace(__VA_ARGS__)
+#define RPE_CORE_INFO(...)  rpe::Logger::GetCoreLogger()->info(__VA_ARGS__)
+#define RPE_CORE_WARN(...)  rpe::Logger::GetCoreLogger()->warn(__VA_ARGS__)
+#define RPE_CORE_ERROR(...) rpe::Logger::GetCoreLogger()->error(__VA_ARGS__)
+#define RPE_CORE_FATAL(...) rpe::Logger::GetCoreLogger()->fatal(__VA_ARGS__)
