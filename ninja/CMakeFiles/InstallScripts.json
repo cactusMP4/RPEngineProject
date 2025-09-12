@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Users/User/Documents/RPEngine/RPEngineProject/ninja/cmake_install.cmake",
-		"C:/Users/User/Documents/RPEngine/RPEngineProject/ninja/RPEngine/cmake_install.cmake",
-		"C:/Users/User/Documents/RPEngine/RPEngineProject/ninja/Sandbox/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

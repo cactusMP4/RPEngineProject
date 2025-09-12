@@ -17,7 +17,8 @@ target_include_directories(RPEngine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/GLFW/include
 )
 
-target_link_libraries(RPEngine PRIVATE ${CMAKE_SOURCE_DIR}/RPEngine/3dParty/GLFW/libglfw3.a)
+add_subdirectory(3dParty/GLFW)
+target_link_libraries(RPEngine PRIVATE glfw)
 
 # Put RPEngine outputs into its own bin/bin-int folder
 set_target_properties(RPEngine PROPERTIES
