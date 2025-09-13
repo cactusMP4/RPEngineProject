@@ -9,7 +9,7 @@ namespace rpe {
     public:
         using EventCallbackFn = std::function<void(Event&)>;
 
-        Window(std::string title = "Rainbow powered app", unsigned int width = 800, unsigned int height = 600) : title(std::move(title)), width(width), height(height) {};
+        explicit Window(std::string title = "Rainbow powered app", int width = 800, int height = 600);
 
         void Init();
         void Update() const;
@@ -17,21 +17,26 @@ namespace rpe {
 
         GLFWwindow* getWindow() const { return window; }
 
-        int GetWidth() const { return width; }
-        void SetWidth(const unsigned int newWidth) { this->width = newWidth; }
-        int GetHeight() const { return height; }
-        void SetHeight(const unsigned int newHeight) { this->height = newHeight; }
+        int GetWidth() const { return data.width; }
+        void SetWidth(const int newWidth) { data.width = newWidth; }
+        int GetHeight() const { return data.height; }
+        void SetHeight(const int newHeight) { data.height = newHeight; }
 
-        std::string GetTitle() const { return title; }
-        void SetTitle(const std::string& newTitle) { this->title = newTitle; }
+        std::string GetTitle() const { return data.title; }
+        void SetTitle(const std::string& newTitle) { data.title = newTitle; }
 
-        EventCallbackFn getEventCallBack() {return eventCallback;}
-        void SetEventCallback(const EventCallbackFn& newCallback) { eventCallback = newCallback; }
+        EventCallbackFn getEventCallBack() {return data.eventCallback;}
+        void SetEventCallback(const EventCallbackFn& newCallback) { data.eventCallback = newCallback; }
     private:
         GLFWwindow* window;
-        std::string title;
-        int width, height;
-        bool inited = false;
-        EventCallbackFn eventCallback;
+
+        struct windowData {
+            std::string title;
+            int width, height;
+            bool inited = false;
+            EventCallbackFn eventCallback;
+        };
+
+        windowData data;
     };
 }
