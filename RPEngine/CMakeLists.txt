@@ -17,10 +17,15 @@ target_include_directories(RPEngine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
         ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/spdlog/include
         ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/GLFW/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/Glad/include
 )
 
 add_subdirectory(3dParty/GLFW)
-target_link_libraries(RPEngine PRIVATE glfw)
+add_subdirectory(3dParty/Glad)
+target_link_libraries(RPEngine PRIVATE
+        glfw
+        glad
+)
 
 # Put RPEngine outputs into its own bin/bin-int folder
 set_target_properties(RPEngine PROPERTIES

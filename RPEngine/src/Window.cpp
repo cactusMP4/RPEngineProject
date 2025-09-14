@@ -36,6 +36,12 @@ namespace rpe {
             return;
         }
         glfwMakeContextCurrent(window);
+
+        if (const int success = gladLoadGLLoader(reinterpret_cast<GLADloadproc>(glfwGetProcAddress)); !success) {
+            RPE_CORE_ERROR("Failed to initialize GLAD: {0}", success);
+            return;
+        }
+
         glfwSetWindowUserPointer(window, &data);
         glfwSwapInterval(1);
 

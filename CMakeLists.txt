@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 project(RPEngineProject)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 # Set global output directories
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin-int/${CMAKE_PROJECT_NAME})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_PROJECT_NAME})
