@@ -6,6 +6,8 @@ add_library(RPEngine SHARED
         src/Logger.cpp
         src/Window.cpp
         include/Window.h
+        include/Layer.h
+        src/Layer.cpp
 )
 
 target_precompile_headers(RPEngine PUBLIC include/rpepch.h)

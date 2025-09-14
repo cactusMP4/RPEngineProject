@@ -16,6 +16,15 @@ namespace rpe {
 
         EventDispatcher dispatcher(event);
         dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(Application::onWindowClosed));
+
+        for (auto it = layers.end(); it != layers.begin(); ) {
+            (*--it)->OnEvent(event);
+            if (event.Handled) {
+                //do not continue
+                //(we don't want to shoot in FPS when we press a UI button for example)
+                break;
+            }
+        }
     }
 
     void Application::run() {
@@ -23,6 +32,10 @@ namespace rpe {
         running = true;
         while (running) {
             window->Update();
+
+            for (Layer* layer : layers) {
+                layer->Update();
+            }
         }
     }
     bool Application::onWindowClosed(WindowCloseEvent &event) {
@@ -32,4 +45,10 @@ namespace rpe {
         return true;
     }
 
+    void Application::PushLayer(Layer *layer) {
+        layers.PushLayer(layer);
+    }
+    void Application::PushOverlay(Layer *overlay) {
+        layers.PushLayer(overlay);
+    }
 }

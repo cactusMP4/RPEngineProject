@@ -12,16 +12,14 @@ namespace rpe {
     };
 
     class Event {
-        friend class EventDispatcher;
     public:
         virtual ~Event() = default;
+
+        bool Handled = false;
 
         virtual EventType GetEventType() const = 0;
         virtual std::string GetName() const = 0;
         virtual std::string ToString() const { return GetName(); }
-
-    protected:
-        bool handled = false;
     };
 
     class EventDispatcher {
@@ -31,7 +29,7 @@ namespace rpe {
 
         template<typename T> bool Dispatch(EventFn<T> func) {
             if (event.GetEventType() == T::GetStaticType()) {
-                event.handled = func(*static_cast<T *>(&event));
+                event.Handled = func(*static_cast<T *>(&event));
                 return true;
             }
             return false;
