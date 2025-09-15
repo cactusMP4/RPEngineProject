@@ -1,9 +1,10 @@
 #pragma once
 
+#include "Core.h"
 #include "Event.h"
 
 namespace rpe {
-    class Layer {
+    class RPE_API Layer {
     public:
         Layer(const std::string& name = "Layer");
         virtual ~Layer();

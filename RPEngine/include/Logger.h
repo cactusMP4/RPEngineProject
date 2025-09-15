@@ -1,9 +1,10 @@
 #pragma once
 
+#include "Core.h"
 #include <spdlog/spdlog.h>
 
 namespace rpe {
-	class Logger {
+	class RPE_API Logger {
 	public:
 		static void Init();
 

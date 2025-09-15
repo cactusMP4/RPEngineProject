@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"RPEngine/3dParty/GLFW/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 335,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"C:/Users/User/Documents/RPEngine/RPEngineProject/bin-int/RPEngineProject/glfw3.lib"
+			],
+			"targetId" : "glfw::@c9cd5885452ee6ceb0e5",
+			"targetIndex" : 3,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "RPEngine/3dParty/GLFW/src",
+		"source" : "RPEngine/3dParty/GLFW/src"
+	}
+}

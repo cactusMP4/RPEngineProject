@@ -1,11 +1,12 @@
 #pragma once
 
+#include "Core.h"
 #include "Layer.h"
 #include "Logger.h"
 #include "Window.h"
 
 namespace rpe {
-    class Application {
+    class RPE_API Application {
     public:
         Application();
         virtual ~Application();

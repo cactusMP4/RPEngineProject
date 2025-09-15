@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Core.h"
 #include "rpepch.h"
 
 namespace rpe {
@@ -11,7 +12,7 @@ namespace rpe {
         MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
     };
 
-    class Event {
+    class RPE_API Event {
     public:
         virtual ~Event() = default;
 
