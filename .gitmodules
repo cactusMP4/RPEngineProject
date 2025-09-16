@@ -4,3 +4,6 @@
 [submodule "RPEngine/3dParty/GLFW"]
 	path = RPEngine/3dParty/GLFW
 	url = https://github.com/glfw/glfw
+[submodule "RPEngine/3dParty/ImGui/src"]
+	path = RPEngine/3dParty/ImGui/src
+	url = https://github.com/ocornut/imgui

@@ -1,0 +1,291 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "RPEngine",
+					"childIndexes" : 
+					[
+						2,
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-RPEngine-Debug-bf555cfa9b8de9217b09.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "RPEngine",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "RPEngine/3dParty/GLFW",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-RPEngine.3dParty.GLFW-Debug-c5ec3b21f7408d94c344.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "RPEngine/3dParty/GLFW",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "RPEngine/3dParty/GLFW/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-RPEngine.3dParty.GLFW.src-Debug-878ddb0a7b352b3e46c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "RPEngine/3dParty/GLFW/src",
+					"targetIndexes" : 
+					[
+						3,
+						6
+					]
+				},
+				{
+					"build" : "RPEngine/3dParty/GLFW/docs",
+					"jsonFile" : "directory-RPEngine.3dParty.GLFW.docs-Debug-e5b8b05824e3d6a5584d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "RPEngine/3dParty/GLFW/docs"
+				},
+				{
+					"build" : "RPEngine/3dParty/Glad",
+					"jsonFile" : "directory-RPEngine.3dParty.Glad-Debug-c409043a809cf168b8ee.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "RPEngine/3dParty/Glad",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "RPEngine/3dParty/ImGui",
+					"jsonFile" : "directory-RPEngine.3dParty.ImGui-Debug-53515b2e04c7a59ddf51.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 4,
+					"source" : "RPEngine/3dParty/ImGui",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "Sandbox",
+					"jsonFile" : "directory-Sandbox-Debug-5f4392a0e5eaed8a8ee6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "Sandbox",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "RPEngineProject"
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "RPEngine",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "GLFW",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						3,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "glad",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "imgui",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "Sandbox",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "RPEngine::@f1f5ef6a05e11fca7970",
+					"jsonFile" : "target-RPEngine-Debug-b8db0c88628437b999c2.json",
+					"name" : "RPEngine",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "Sandbox::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-Sandbox-Debug-d2efee5774964933edd2.json",
+					"name" : "Sandbox",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "glad::@d51f3960d739d938c3e5",
+					"jsonFile" : "target-glad-Debug-7e1c4e16c71afe04c92c.json",
+					"name" : "glad",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw::@c9cd5885452ee6ceb0e5",
+					"jsonFile" : "target-glfw-Debug-9830beb15d8952bda50d.json",
+					"name" : "glfw",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "imgui::@ef162488de7f782868f5",
+					"jsonFile" : "target-imgui-Debug-d13b31d1eb95a08e5405.json",
+					"name" : "imgui",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uninstall::@4701c69380e6856bf427",
+					"jsonFile" : "target-uninstall-Debug-d1f7d86a7c368f113d1a.json",
+					"name" : "uninstall",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "update_mappings::@c9cd5885452ee6ceb0e5",
+					"jsonFile" : "target-update_mappings-Debug-0a504599b53c00130317.json",
+					"name" : "update_mappings",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug",
+		"source" : "C:/Users/User/Documents/RPEngine/RPEngineProject"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

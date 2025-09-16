@@ -105,12 +105,12 @@ build install\local: phony CMakeFiles\install\local.util
 #############################################
 # Order-only phony target for RPEngine
 
-build cmake_object_order_depends_target_RPEngine: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+build cmake_object_order_depends_target_RPEngine: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui
 
 build RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YcC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -125,7 +125,7 @@ build RPEngine\CMakeFiles\RPEngine.dir\.\cmake_pch.cxx.pch: phony RPEngine\CMake
 build RPEngine\CMakeFiles\RPEngine.dir\src\Application.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\Application.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -134,7 +134,7 @@ build RPEngine\CMakeFiles\RPEngine.dir\src\Application.cpp.obj: CXX_COMPILER__RP
 build RPEngine\CMakeFiles\RPEngine.dir\src\Logger.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\Logger.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -143,7 +143,7 @@ build RPEngine\CMakeFiles\RPEngine.dir\src\Logger.cpp.obj: CXX_COMPILER__RPEngin
 build RPEngine\CMakeFiles\RPEngine.dir\src\Window.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\Window.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -152,7 +152,25 @@ build RPEngine\CMakeFiles\RPEngine.dir\src\Window.cpp.obj: CXX_COMPILER__RPEngin
 build RPEngine\CMakeFiles\RPEngine.dir\src\Layer.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\Layer.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
+  OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
+  TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
+  TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.pdb
+
+build RPEngine\CMakeFiles\RPEngine.dir\src\ImGuiLayer.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\ImGuiLayer.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
+  DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
+  OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
+  TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
+  TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.pdb
+
+build RPEngine\CMakeFiles\RPEngine.dir\src\ImGuiRenderer.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\ImGuiRenderer.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
+  DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -166,10 +184,10 @@ build RPEngine\CMakeFiles\RPEngine.dir\src\Layer.cpp.obj: CXX_COMPILER__RPEngine
 #############################################
 # Link the shared library C:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll
 
-build C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngine\RPEngine.lib: CXX_SHARED_LIBRARY_LINKER__RPEngine_Debug RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.obj RPEngine\CMakeFiles\RPEngine.dir\src\Application.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Logger.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Window.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Layer.cpp.obj | C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib || C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib
+build C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngine\RPEngine.lib: CXX_SHARED_LIBRARY_LINKER__RPEngine_Debug RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.obj RPEngine\CMakeFiles\RPEngine.dir\src\Application.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Logger.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Window.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Layer.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\ImGuiLayer.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\ImGuiRenderer.cpp.obj | C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib || C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
-  LINK_LIBRARIES = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib  C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib  C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib  C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -744,6 +762,131 @@ build RPEngine\3dParty\Glad\install\local: phony RPEngine\3dParty\Glad\CMakeFile
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
+# C:/Users/User/Documents/RPEngine/RPEngineProject/RPEngine/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target imgui
+
+
+#############################################
+# Order-only phony target for imgui
+
+build cmake_object_order_depends_target_imgui: phony || .
+
+build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui.cpp || cmake_object_order_depends_target_imgui
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
+  TARGET_COMPILE_PDB = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
+
+build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_demo.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui_demo.cpp || cmake_object_order_depends_target_imgui
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
+  TARGET_COMPILE_PDB = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
+
+build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_draw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui_draw.cpp || cmake_object_order_depends_target_imgui
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
+  TARGET_COMPILE_PDB = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
+
+build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_tables.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui_tables.cpp || cmake_object_order_depends_target_imgui
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
+  TARGET_COMPILE_PDB = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
+
+build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_widgets.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui_widgets.cpp || cmake_object_order_depends_target_imgui
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
+  TARGET_COMPILE_PDB = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target imgui
+
+
+#############################################
+# Link the static library C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib
+
+build C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib: CXX_STATIC_LIBRARY_LINKER__imgui_Debug RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui.cpp.obj RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_demo.cpp.obj RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_draw.cpp.obj RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_tables.cpp.obj RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_widgets.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_FILE = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib
+  TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build RPEngine\3dParty\ImGui\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\ImGui && D:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build RPEngine\3dParty\ImGui\edit_cache: phony RPEngine\3dParty\ImGui\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build RPEngine\3dParty\ImGui\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\ImGui && D:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\User\Documents\RPEngine\RPEngineProject -BC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build RPEngine\3dParty\ImGui\rebuild_cache: phony RPEngine\3dParty\ImGui\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build RPEngine\3dParty\ImGui\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build RPEngine\3dParty\ImGui\CMakeFiles\install.util: CUSTOM_COMMAND RPEngine\3dParty\ImGui\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\ImGui && D:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build RPEngine\3dParty\ImGui\install: phony RPEngine\3dParty\ImGui\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build RPEngine\3dParty\ImGui\CMakeFiles\install\local.util: CUSTOM_COMMAND RPEngine\3dParty\ImGui\all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\ImGui && D:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build RPEngine\3dParty\ImGui\install\local: phony RPEngine\3dParty\ImGui\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
 # C:/Users/User/Documents/RPEngine/RPEngineProject/CMakeLists.txt
 # =============================================================================
 
@@ -758,7 +901,7 @@ build cmake_object_order_depends_target_Sandbox: phony || cmake_object_order_dep
 
 build Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.cxx.obj: CXX_COMPILER__Sandbox_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.cxx | Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.hxx || cmake_object_order_depends_target_Sandbox
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YcC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = Sandbox\CMakeFiles\Sandbox.dir
   OBJECT_FILE_DIR = Sandbox\CMakeFiles\Sandbox.dir
   TARGET_COMPILE_PDB = Sandbox\CMakeFiles\Sandbox.dir\
@@ -772,7 +915,7 @@ build Sandbox\CMakeFiles\Sandbox.dir\.\cmake_pch.cxx.pch: phony Sandbox\CMakeFil
 
 build Sandbox\CMakeFiles\Sandbox.dir\src\Sandbox.cpp.obj: CXX_COMPILER__Sandbox_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\src\Sandbox.cpp | Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.hxx Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_Sandbox
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = Sandbox\CMakeFiles\Sandbox.dir
   OBJECT_FILE_DIR = Sandbox\CMakeFiles\Sandbox.dir\src
   TARGET_COMPILE_PDB = Sandbox\CMakeFiles\Sandbox.dir\
@@ -870,6 +1013,10 @@ build glfw: phony C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEn
 
 build glfw3.lib: phony C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib
 
+build imgui: phony C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib
+
+build imgui.lib: phony C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib
+
 build uninstall: phony RPEngine\3dParty\GLFW\uninstall
 
 build update_mappings: phony RPEngine\3dParty\GLFW\src\update_mappings
@@ -889,7 +1036,7 @@ build all: phony RPEngine\all Sandbox\all
 #############################################
 # Folder: C:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine
 
-build RPEngine\all: phony C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll RPEngine\3dParty\GLFW\all RPEngine\3dParty\Glad\all
+build RPEngine\all: phony C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll RPEngine\3dParty\GLFW\all RPEngine\3dParty\Glad\all RPEngine\3dParty\ImGui\all
 
 # =============================================================================
 
@@ -922,6 +1069,13 @@ build RPEngine\3dParty\Glad\all: phony C$:\Users\User\Documents\RPEngine\RPEngin
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/3dParty/ImGui
+
+build RPEngine\3dParty\ImGui\all: phony C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox
 
 build Sandbox\all: phony C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\Sandbox\Sandbox.exe
@@ -933,14 +1087,14 @@ build Sandbox\all: phony C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\S
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Users\User\Documents\RPEngine\RPEngineProject\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\cmake_uninstall.cmake.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\glfw3.pc.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\glfw3Config.cmake.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\docs\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindDoxygen.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindThreads.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake
+build build.ninja: RERUN_CMAKE | C$:\Users\User\Documents\RPEngine\RPEngineProject\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\cmake_uninstall.cmake.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\glfw3.pc.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\glfw3Config.cmake.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\docs\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindDoxygen.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindThreads.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Users\User\Documents\RPEngine\RPEngineProject\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\cmake_uninstall.cmake.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\glfw3.pc.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\glfw3Config.cmake.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\docs\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindDoxygen.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindThreads.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake: phony
+build C$:\Users\User\Documents\RPEngine\RPEngineProject\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\cmake_uninstall.cmake.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\glfw3.pc.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\CMake\glfw3Config.cmake.in C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\docs\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\CMakeLists.txt C$:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\CMakeLists.txt CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\BasicConfigVersion-SameMajorVersion.cmake.in D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakePackageConfigHelpers.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindDoxygen.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\FindThreads.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\GNUInstallDirs.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake D$:\VS\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\WriteBasicConfigVersionFile.cmake: phony
 
 
 #############################################
