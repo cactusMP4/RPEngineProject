@@ -28,6 +28,8 @@ namespace rpe {
 
         EventCallbackFn getEventCallBack() {return data.eventCallback;}
         void SetEventCallback(const EventCallbackFn& newCallback) { data.eventCallback = newCallback; }
+
+        GLFWwindow* GetGLFWwindow() const { return window; }
     private:
         GLFWwindow* window;
 

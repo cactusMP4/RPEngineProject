@@ -8,6 +8,8 @@ add_library(RPEngine SHARED
         src/Layer.cpp
         src/ImGuiLayer.cpp
         src/ImGuiRenderer.cpp
+        include/Input.h
+        src/Input.cpp
 )
 
 target_precompile_headers(RPEngine PUBLIC include/rpepch.h)
