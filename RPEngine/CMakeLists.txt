@@ -32,7 +32,6 @@ target_link_libraries(RPEngine PRIVATE
 )
 
 target_compile_features(RPEngine PRIVATE cxx_std_17)
-target_compile_options(RPEngine PRIVATE /utf-8)
 
 target_compile_definitions(RPEngine PRIVATE RPE_BUILD_DLL)
 

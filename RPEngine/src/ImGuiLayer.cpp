@@ -2,7 +2,7 @@
 
 #include "imgui.h"
 #include "ImGui/ImGuiRenderer.h"
-#include "GLFW/glfw3.h"
+#include "Application.h"
 
 namespace rpe {
 	ImGuiLayer::ImGuiLayer() : Layer("ImGuiLayer") {};
@@ -10,6 +10,8 @@ namespace rpe {
 
 
 	void ImGuiLayer::Attach() {
+		RPE_CORE_INFO("Attaching ImGui layer");
+
 		ImGui::CreateContext();
 		ImGui::StyleColorsClassic();
 
@@ -26,14 +28,21 @@ namespace rpe {
 	}
 
 	void ImGuiLayer::Update() {
-		ImGui_ImplOpenGL3_NewFrame();
-		ImGui::NewFrame();
-
 		ImGuiIO& io = ImGui::GetIO();
 
-		float time = glfwGetTime();
-		io.DeltaTime = layerTime > 0.0f ? (time - layerTime) : (1.0f / 60.0f);
+		const Application& app = Application::GetApplication();
+
+		io.DisplaySize = ImVec2(
+			static_cast<float>(app.GetWindow().GetWidth()),
+			static_cast<float>(app.GetWindow().GetHeight())
+		);
+
+		const double time = glfwGetTime();
+		io.DeltaTime = static_cast<float>(layerTime > 0.0f ? (time - layerTime) : (1.0f / 60.0f));
 		layerTime = time;
+
+		ImGui_ImplOpenGL3_NewFrame();
+		ImGui::NewFrame();
 
 		static bool show = true;
 		ImGui::ShowDemoWindow(&show);

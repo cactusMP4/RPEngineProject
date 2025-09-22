@@ -18,7 +18,6 @@ target_include_directories(Sandbox PRIVATE
 )
 
 target_compile_features(Sandbox PRIVATE cxx_std_17)
-target_compile_options(Sandbox PRIVATE /utf-8)
 
 # Put Sandbox outputs into its own bin/bin-int folder
 set_target_properties(Sandbox PROPERTIES

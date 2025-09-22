@@ -1,9 +1,10 @@
 #pragma once
 
+#include "Core.h"
 #include "Layer.h"
 
 namespace rpe {
-	class ImGuiLayer : public Layer {
+	class RPE_API ImGuiLayer : public Layer {
 	public:
 		ImGuiLayer();
 		~ImGuiLayer();
@@ -14,6 +15,6 @@ namespace rpe {
 		void Update();
 		void OnEvent(Event& event);
 	private:
-		float layerTime = 0.0f;
+		double layerTime = 0.0f;
 	};
 }

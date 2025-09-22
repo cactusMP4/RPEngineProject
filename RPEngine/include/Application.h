@@ -17,10 +17,15 @@ namespace rpe {
 
         void PushLayer(Layer *layer);
         void PushOverlay(Layer* overlay);
+
+        Window& GetWindow() const { return *window; }
+        static Application& GetApplication() { return *instance; }
     private:
         std::unique_ptr<Window> window;
         bool running = false;
         LayerStack layers;
+
+        static Application* instance;
     };
 }
 

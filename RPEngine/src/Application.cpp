@@ -3,8 +3,20 @@
 #define BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
 
 namespace rpe {
+    Application* Application::instance = nullptr;
+
     Application::Application() {
+        RPE_CORE_INFO("Creating application");
+
+        if (Application::instance) {
+            RPE_CORE_WARN("Application already exists");
+            return;
+        }
+
+        Application::instance = this;
+
         window = std::unique_ptr<Window>(new Window());
+        window->Init();
         window->SetEventCallback(BIND_EVENT_FN(Application::onEvent));
     }
     Application::~Application() {
@@ -28,7 +40,8 @@ namespace rpe {
     }
 
     void Application::run() {
-        window->Init();
+        RPE_CORE_INFO("Running app...");
+
         running = true;
         while (running) {
             window->Update();

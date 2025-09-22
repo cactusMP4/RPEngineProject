@@ -4,6 +4,10 @@ class ExampleLayer : public rpe::Layer {
 public:
     ExampleLayer() : Layer("ExampleLayer") {}
 
+    void Attach() override {
+        RPE_INFO("Attaching example layer");
+    }
+
     void Update() override {
         RPE_TRACE("ExampleLayer::Update");
     }
@@ -16,6 +20,7 @@ class Sandbox : public rpe::Application {
 public:
     Sandbox() {
         PushLayer(new ExampleLayer());
+        PushOverlay(new rpe::ImGuiLayer());
     }
 };
 
