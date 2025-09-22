@@ -9,7 +9,6 @@ public:
     }
 
     void Update() override {
-        RPE_TRACE("ExampleLayer::Update");
     }
     void OnEvent(rpe::Event& e) override {
         RPE_TRACE("ExampleLayer::OnEvent ({0})", e.ToString());

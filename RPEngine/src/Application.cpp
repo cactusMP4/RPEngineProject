@@ -1,7 +1,5 @@
 #include "Application.h"
 
-#define BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
-
 namespace rpe {
     Application* Application::instance = nullptr;
 
@@ -17,7 +15,7 @@ namespace rpe {
 
         window = std::unique_ptr<Window>(new Window());
         window->Init();
-        window->SetEventCallback(BIND_EVENT_FN(Application::onEvent));
+        window->SetEventCallback(RPE_BIND_EVENT_FN(Application::onEvent));
     }
     Application::~Application() {
         running = false;
@@ -27,7 +25,7 @@ namespace rpe {
         RPE_CORE_TRACE("Event: {0}", event.ToString());
 
         EventDispatcher dispatcher(event);
-        dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(Application::onWindowClosed));
+        dispatcher.Dispatch<WindowCloseEvent>(RPE_BIND_EVENT_FN(Application::onWindowClosed));
 
         for (auto it = layers.end(); it != layers.begin(); ) {
             (*--it)->OnEvent(event);

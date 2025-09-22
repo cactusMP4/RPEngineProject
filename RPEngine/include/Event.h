@@ -8,7 +8,7 @@ namespace rpe {
     enum class EventType {
         None = 0,
         WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
-        KeyPressed, KeyReleased,
+        KeyPressed, KeyReleased, KeyTyped,
         MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
     };
 
@@ -102,6 +102,16 @@ namespace rpe {
         EventType GetEventType() const override { return EventType::KeyReleased; }
         static EventType GetStaticType() { return EventType::KeyReleased; }
         std::string GetName() const override { return "KeyReleasedEvent"; }
+    };
+    class KeyTypedEvent : public KeyEvent {
+    public:
+        KeyTypedEvent(const int keycode) : KeyEvent(keycode) {}
+
+        std::string ToString() const override { return "KeyTypedEvent: (" + std::to_string(KeyCode) + ")"; }
+
+        EventType GetEventType() const override { return EventType::KeyTyped; }
+        static EventType GetStaticType() { return EventType::KeyTyped; }
+        std::string GetName() const override { return "KeyTypedEvent"; }
     };
 
     //MOUSE EVENTS

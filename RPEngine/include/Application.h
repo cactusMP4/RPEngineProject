@@ -5,6 +5,8 @@
 #include "Logger.h"
 #include "Window.h"
 
+#define RPE_BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
+
 namespace rpe {
     class RPE_API Application {
     public:

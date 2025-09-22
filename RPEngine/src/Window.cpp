@@ -83,6 +83,12 @@ namespace rpe {
                 }
             }
         });
+        glfwSetCharCallback(window, [](GLFWwindow* window, unsigned int keycode) {
+            windowData& data = *static_cast<windowData *>(glfwGetWindowUserPointer(window));
+
+            KeyTypedEvent event(static_cast<int>(keycode));
+            data.eventCallback(event);
+        });
 
         glfwSetWindowSizeCallback(window, [](GLFWwindow* window, int width, int height) {
             windowData& data = *static_cast<windowData *>(glfwGetWindowUserPointer(window));
@@ -128,6 +134,9 @@ namespace rpe {
     void Window::Update() const {
         glfwPollEvents();
         glfwSwapBuffers(window);
+
+        glClearColor(0.1f, 0.2f, 0.1f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
     }
 
     void Window::Destroy() const {
