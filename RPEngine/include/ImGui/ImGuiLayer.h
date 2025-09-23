@@ -25,6 +25,8 @@ namespace rpe {
 		bool OnKeyReleasedEvent(const KeyReleasedEvent& event);
 		bool OnKeyTypedEvent(const KeyTypedEvent& event);
 
+		bool OnWindowResizeEvent(const WindowResizeEvent& event);
+
 
 		double layerTime = 0.0f;
 	};

@@ -46,10 +46,6 @@ namespace rpe {
         while (running) {
             window->Update();
 
-            RPE_CORE_INFO("is F pressed: {0}", Input::IsKeyPressed(GLFW_KEY_F));
-            RPE_CORE_INFO("is mouse 1 pressed: {0}", Input::IsMouseButtonPressed(GLFW_MOUSE_BUTTON_1));
-            RPE_CORE_INFO("mouse pos: {0}, {1}", Input::GetMouseX(), Input::GetMouseY());
-
             for (Layer* layer : layers) {
                 layer->Update();
             }
