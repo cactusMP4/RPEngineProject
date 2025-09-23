@@ -7,3 +7,6 @@
 [submodule "RPEngine/3dParty/ImGui/src"]
 	path = RPEngine/3dParty/ImGui/src
 	url = https://github.com/ocornut/imgui
+[submodule "RPEngine/3dParty/glm"]
+	path = RPEngine/3dParty/glm
+	url = https://github.com/g-truc/glm

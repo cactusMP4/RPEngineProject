@@ -21,6 +21,7 @@ target_include_directories(RPEngine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/GLFW/include
         ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/Glad/include
         ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/ImGui/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/glm
 )
 
 set(GLFW_LIBRARY_TYPE "STATIC" CACHE STRING "" FORCE)

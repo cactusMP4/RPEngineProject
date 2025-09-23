@@ -15,6 +15,7 @@ target_include_directories(Sandbox PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/GLFW/include
         ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/Glad/include
         ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/ImGui/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/glm
 )
 
 target_compile_features(Sandbox PRIVATE cxx_std_17)
