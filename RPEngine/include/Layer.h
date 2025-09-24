@@ -12,6 +12,7 @@ namespace rpe {
         virtual void Attach() {}
         virtual void Detach() {}
         virtual void Update() {}
+        virtual void RenderImGui() {}
         virtual void OnEvent(Event& event) {}
 
         const std::string& GetName() const { return debugName; }

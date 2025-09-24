@@ -6,14 +6,18 @@ add_library(RPEngine SHARED
         src/Logger.cpp
         src/Window.cpp
         src/Layer.cpp
-        src/ImGuiLayer.cpp
-        src/ImGuiRenderer.cpp
+        src/ImGui/ImGuiLayer.cpp
+        src/ImGui/ImGuiBuild.cpp
         include/Input.h
         src/Input.cpp
 )
 
 target_precompile_headers(RPEngine PUBLIC include/rpepch.h)
 
+if(UNIX AND NOT APPLE)
+    find_package(X11 REQUIRED)
+    target_link_libraries(RPEngine PRIVATE X11::X11)
+endif()
 
 target_include_directories(RPEngine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include

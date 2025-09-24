@@ -4,6 +4,7 @@
 #include "Layer.h"
 #include "Logger.h"
 #include "Window.h"
+#include "ImGui/ImGuiLayer.h"
 
 #define RPE_BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
 
@@ -24,6 +25,7 @@ namespace rpe {
         static Application& GetApplication() { return *instance; }
     private:
         std::unique_ptr<Window> window;
+        ImGuiLayer* imguiLayer;
         bool running = false;
         LayerStack layers;
 

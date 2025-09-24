@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/RPEngine/3dParty/GLFW" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/RPEngine/3dParty/ImGui/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RPEngine/3dParty/glm" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/RPEngine/3dParty/spdlog" vcs="Git" />
   </component>
 </project>

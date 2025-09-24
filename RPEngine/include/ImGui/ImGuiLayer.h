@@ -10,24 +10,13 @@ namespace rpe {
 		~ImGuiLayer();
 
 
-		void Attach();
-		void Detach();
-		void Update();
-		void OnEvent(Event& event);
+		void Attach() override;
+		void Detach() override;
+		void RenderImGui() override;
 
+		void Begin();
+		void End();
 	private:
-		bool OnMouseMovedEvent(const MouseMovedEvent& event);
-		bool OnMouseButtonPressedEvent(const MouseButtonPressedEvent& event);
-		bool OnMouseButtonReleasedEvent(const MouseButtonReleasedEvent& event);
-		bool OnMouseScrolledEvent(const MouseScrolledEvent& event);
-
-		bool OnKeyPressedEvent(const KeyPressedEvent& event);
-		bool OnKeyReleasedEvent(const KeyReleasedEvent& event);
-		bool OnKeyTypedEvent(const KeyTypedEvent& event);
-
-		bool OnWindowResizeEvent(const WindowResizeEvent& event);
-
-
 		double layerTime = 0.0f;
 	};
 }

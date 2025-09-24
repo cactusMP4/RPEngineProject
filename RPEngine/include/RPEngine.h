@@ -7,4 +7,6 @@
 #include "Window.h"
 #include "Event.h"
 #include "Layer.h"
+#include "Input.h"
+#include "imgui.h"
 #include "ImGui/ImGuiLayer.h"

@@ -1,5 +1,7 @@
 #include "Application.h"
 
+#include <memory>
+
 #include "Input.h"
 
 namespace rpe {
@@ -15,9 +17,12 @@ namespace rpe {
 
         Application::instance = this;
 
-        window = std::unique_ptr<Window>(new Window());
+        window = std::make_unique<Window>();
         window->Init();
         window->SetEventCallback(RPE_BIND_EVENT_FN(Application::onEvent));
+
+        imguiLayer = new ImGuiLayer();
+        PushOverlay(imguiLayer);
     }
     Application::~Application() {
         running = false;
@@ -44,11 +49,15 @@ namespace rpe {
 
         running = true;
         while (running) {
-            window->Update();
 
+            imguiLayer->Begin();
             for (Layer* layer : layers) {
                 layer->Update();
+                layer->RenderImGui();
             }
+            imguiLayer->End();
+
+            window->Update();
         }
     }
     bool Application::onWindowClosed(WindowCloseEvent &event) {
