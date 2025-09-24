@@ -12,7 +12,7 @@ namespace rpe {
 
 
     LayerStack::LayerStack() {
-        LayerInsert = Layers.begin();
+
     }
     LayerStack::~LayerStack() {
         for (const Layer* layer : Layers) {
@@ -22,14 +22,15 @@ namespace rpe {
 
     //making sure layers always go before overlays
     void LayerStack::PushLayer(Layer *layer) {
-        LayerInsert = Layers.emplace(LayerInsert, layer);
+        Layers.emplace(Layers.begin() + LayerInsertIndex, layer);
+        LayerInsertIndex++;
         layer->Attach();
     }
     void LayerStack::PopLayer(Layer *layer) {
         auto it = std::find(Layers.begin(), Layers.end(), layer);
         if (it != Layers.end()) {
             Layers.erase(it);
-            --LayerInsert;
+            LayerInsertIndex--;
         }
         layer->Detach();
     }
