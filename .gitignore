@@ -1,0 +1,44 @@
+# Build artifacts
+/bin/
+/bin-int/
+/out/
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/*.cmake
+/Makefile
+/*.sln
+/*.vcxproj*
+/*.opensdf
+/*.sdf
+/*.user
+/Debug/
+/Release/
+/x64/
+*.obj
+*.o
+*.so
+*.dll
+*.exe
+*.lib
+*.app
+*.dylib
+*.exp
+*.pdb
+*.ini
+
+# IDE-specific files
+.idea/
+.vscode/
+*.code-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Other
+*.swp
+*.tmp
