@@ -110,7 +110,7 @@ build cmake_object_order_depends_target_RPEngine: phony || cmake_object_order_de
 build RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YcC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -125,7 +125,7 @@ build RPEngine\CMakeFiles\RPEngine.dir\.\cmake_pch.cxx.pch: phony RPEngine\CMake
 build RPEngine\CMakeFiles\RPEngine.dir\src\Application.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\Application.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -134,7 +134,7 @@ build RPEngine\CMakeFiles\RPEngine.dir\src\Application.cpp.obj: CXX_COMPILER__RP
 build RPEngine\CMakeFiles\RPEngine.dir\src\Logger.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\Logger.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -143,7 +143,7 @@ build RPEngine\CMakeFiles\RPEngine.dir\src\Logger.cpp.obj: CXX_COMPILER__RPEngin
 build RPEngine\CMakeFiles\RPEngine.dir\src\Window.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\Window.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -152,25 +152,34 @@ build RPEngine\CMakeFiles\RPEngine.dir\src\Window.cpp.obj: CXX_COMPILER__RPEngin
 build RPEngine\CMakeFiles\RPEngine.dir\src\Layer.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\Layer.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
   TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.pdb
 
-build RPEngine\CMakeFiles\RPEngine.dir\src\ImGuiLayer.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\ImGuiLayer.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
+build RPEngine\CMakeFiles\RPEngine.dir\src\ImGui\ImGuiLayer.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\ImGui\ImGuiLayer.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
-  OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
+  OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src\ImGui
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
   TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.pdb
 
-build RPEngine\CMakeFiles\RPEngine.dir\src\ImGuiRenderer.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\ImGuiRenderer.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
+build RPEngine\CMakeFiles\RPEngine.dir\src\ImGui\ImGuiBuild.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\ImGui\ImGuiBuild.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
   DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
+  OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
+  OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src\ImGui
+  TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
+  TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.pdb
+
+build RPEngine\CMakeFiles\RPEngine.dir\src\Input.cpp.obj: CXX_COMPILER__RPEngine_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\src\Input.cpp | RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.hxx RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_RPEngine
+  DEFINES = -DRPE_BUILD_DLL -DRPEngine_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/RPEngine/CMakeFiles/RPEngine.dir/cmake_pch.hxx
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
   OBJECT_DIR = RPEngine\CMakeFiles\RPEngine.dir
   OBJECT_FILE_DIR = RPEngine\CMakeFiles\RPEngine.dir\src
   TARGET_COMPILE_PDB = RPEngine\CMakeFiles\RPEngine.dir\
@@ -184,7 +193,7 @@ build RPEngine\CMakeFiles\RPEngine.dir\src\ImGuiRenderer.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the shared library C:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll
 
-build C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngine\RPEngine.lib: CXX_SHARED_LIBRARY_LINKER__RPEngine_Debug RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.obj RPEngine\CMakeFiles\RPEngine.dir\src\Application.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Logger.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Window.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Layer.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\ImGuiLayer.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\ImGuiRenderer.cpp.obj | C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib || C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib
+build C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngine\RPEngine.lib: CXX_SHARED_LIBRARY_LINKER__RPEngine_Debug RPEngine\CMakeFiles\RPEngine.dir\cmake_pch.cxx.obj RPEngine\CMakeFiles\RPEngine.dir\src\Application.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Logger.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Window.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Layer.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\ImGui\ImGuiLayer.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\ImGui\ImGuiBuild.cpp.obj RPEngine\CMakeFiles\RPEngine.dir\src\Input.cpp.obj | C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib || C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
   LINK_LIBRARIES = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glfw3.lib  C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\glad.lib  C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -337,7 +346,7 @@ build cmake_object_order_depends_target_glfw: phony || .
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -346,7 +355,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__g
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -355,7 +364,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -364,7 +373,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glf
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -373,7 +382,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__g
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -382,7 +391,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -391,7 +400,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__gl
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -400,7 +409,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__gl
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -409,7 +418,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILE
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -418,7 +427,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMP
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -427,7 +436,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER_
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -436,7 +445,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPIL
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -445,7 +454,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILE
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -454,7 +463,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPI
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\win32_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -463,7 +472,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPIL
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -472,7 +481,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -481,7 +490,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPIL
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -490,7 +499,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -499,7 +508,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMP
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -508,7 +517,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPI
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -517,7 +526,7 @@ build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPIL
 
 build RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src\wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /W3
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8 /W3
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\RPEngine\3dParty\GLFW\src
   OBJECT_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\GLFW\src\CMakeFiles\glfw.dir
@@ -682,7 +691,7 @@ build RPEngine\3dParty\GLFW\docs\install\local: phony RPEngine\3dParty\GLFW\docs
 build cmake_object_order_depends_target_glad: phony || .
 
 build RPEngine\3dParty\Glad\CMakeFiles\glad.dir\src\glad.c.obj: C_COMPILER__glad_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\src\glad.c || cmake_object_order_depends_target_glad
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd /utf-8
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include
   OBJECT_DIR = RPEngine\3dParty\Glad\CMakeFiles\glad.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\Glad\CMakeFiles\glad.dir\src
@@ -775,7 +784,7 @@ build RPEngine\3dParty\Glad\install\local: phony RPEngine\3dParty\Glad\CMakeFile
 build cmake_object_order_depends_target_imgui: phony || .
 
 build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui.cpp || cmake_object_order_depends_target_imgui
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /utf-8
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
@@ -783,7 +792,7 @@ build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui.cpp.obj: CXX_COMPILE
   TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
 
 build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_demo.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui_demo.cpp || cmake_object_order_depends_target_imgui
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /utf-8
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
@@ -791,7 +800,7 @@ build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_demo.cpp.obj: CXX_CO
   TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
 
 build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_draw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui_draw.cpp || cmake_object_order_depends_target_imgui
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /utf-8
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
@@ -799,7 +808,7 @@ build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_draw.cpp.obj: CXX_CO
   TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
 
 build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_tables.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui_tables.cpp || cmake_object_order_depends_target_imgui
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /utf-8
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
@@ -807,7 +816,7 @@ build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_tables.cpp.obj: CXX_
   TARGET_PDB = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.pdb
 
 build RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src\imgui_widgets.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src\imgui_widgets.cpp || cmake_object_order_depends_target_imgui
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd /utf-8
   INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
   OBJECT_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = RPEngine\3dParty\ImGui\CMakeFiles\imgui.dir\src
@@ -897,11 +906,11 @@ build RPEngine\3dParty\ImGui\install\local: phony RPEngine\3dParty\ImGui\CMakeFi
 #############################################
 # Order-only phony target for Sandbox
 
-build cmake_object_order_depends_target_Sandbox: phony || cmake_object_order_depends_target_RPEngine
+build cmake_object_order_depends_target_Sandbox: phony || cmake_object_order_depends_target_RPEngine cmake_object_order_depends_target_imgui
 
 build Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.cxx.obj: CXX_COMPILER__Sandbox_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\out\build\x64-Debug\Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.cxx | Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.hxx || cmake_object_order_depends_target_Sandbox
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YcC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\glm -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
   OBJECT_DIR = Sandbox\CMakeFiles\Sandbox.dir
   OBJECT_FILE_DIR = Sandbox\CMakeFiles\Sandbox.dir
   TARGET_COMPILE_PDB = Sandbox\CMakeFiles\Sandbox.dir\
@@ -915,7 +924,7 @@ build Sandbox\CMakeFiles\Sandbox.dir\.\cmake_pch.cxx.pch: phony Sandbox\CMakeFil
 
 build Sandbox\CMakeFiles\Sandbox.dir\src\Sandbox.cpp.obj: CXX_COMPILER__Sandbox_unscanned_Debug C$:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\src\Sandbox.cpp | Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.hxx Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.cxx.pch || cmake_object_order_depends_target_Sandbox
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /utf-8 /YuC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/cmake_pch.hxx /FpC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/./cmake_pch.cxx.pch /FIC:/Users/User/Documents/RPEngine/RPEngineProject/out/build/x64-Debug/Sandbox/CMakeFiles/Sandbox.dir/cmake_pch.hxx
-  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src
+  INCLUDES = -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\Sandbox\3dParty\glm -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\spdlog\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\GLFW\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\Glad\include -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\ImGui\src -IC:\Users\User\Documents\RPEngine\RPEngineProject\RPEngine\3dParty\glm
   OBJECT_DIR = Sandbox\CMakeFiles\Sandbox.dir
   OBJECT_FILE_DIR = Sandbox\CMakeFiles\Sandbox.dir\src
   TARGET_COMPILE_PDB = Sandbox\CMakeFiles\Sandbox.dir\
@@ -929,10 +938,10 @@ build Sandbox\CMakeFiles\Sandbox.dir\src\Sandbox.cpp.obj: CXX_COMPILER__Sandbox_
 #############################################
 # Link the executable C:\Users\User\Documents\RPEngine\RPEngineProject\bin\Sandbox\Sandbox.exe
 
-build C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\Sandbox\Sandbox.exe: CXX_EXECUTABLE_LINKER__Sandbox_Debug Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.cxx.obj Sandbox\CMakeFiles\Sandbox.dir\src\Sandbox.cpp.obj | C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngine\RPEngine.lib || C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll
+build C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\Sandbox\Sandbox.exe: CXX_EXECUTABLE_LINKER__Sandbox_Debug Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.cxx.obj Sandbox\CMakeFiles\Sandbox.dir\src\Sandbox.cpp.obj | C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngine\RPEngine.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib || C$:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib C$:\Users\User\Documents\RPEngine\RPEngineProject\bin\RPEngine\RPEngine.dll
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngine\RPEngine.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngine\RPEngine.lib  C:\Users\User\Documents\RPEngine\RPEngineProject\bin-int\RPEngineProject\imgui.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = Sandbox\CMakeFiles\Sandbox.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

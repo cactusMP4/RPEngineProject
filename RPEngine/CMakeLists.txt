@@ -35,6 +35,8 @@ add_subdirectory(3dParty/ImGui)
 target_link_libraries(RPEngine PRIVATE
         glfw
         glad
+)
+target_link_libraries(RPEngine PUBLIC
         imgui
 )
 

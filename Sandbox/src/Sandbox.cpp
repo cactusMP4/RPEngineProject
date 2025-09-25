@@ -11,9 +11,6 @@ public:
     void Update() override {
     }
     void RenderImGui() override {
-        ImGui::Begin("test");
-        ImGui::Text("Hello World!");
-        ImGui::End();
     };
     void OnEvent(rpe::Event& e) override {
         RPE_TRACE("ExampleLayer::OnEvent ({0})", e.ToString());
