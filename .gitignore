@@ -5,6 +5,7 @@
 /build/
 /CMakeFiles/
 /CMakeCache.txt
+/.vs/
 /*.cmake
 /Makefile
 /*.sln
