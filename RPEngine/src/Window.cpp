@@ -29,18 +29,16 @@ namespace rpe {
             RPE_CORE_ERROR("GLFW Error {0}: {1}", code, desc);
         });
 
+        //create window
         RPE_CORE_INFO("Initializing window '{0}' ({1}; {2})", data.title, data.width, data.height);
         window = glfwCreateWindow(data.width, data.height, data.title.c_str(), nullptr, nullptr);
         if (window == nullptr) {
             RPE_CORE_ERROR("Failed to create GLFW window");
             return;
         }
-        glfwMakeContextCurrent(window);
 
-        if (const int success = gladLoadGLLoader(reinterpret_cast<GLADloadproc>(glfwGetProcAddress)); !success) {
-            RPE_CORE_ERROR("Failed to initialize GLAD: {0}", success);
-            return;
-        }
+        context = OpenGLContext(window);
+        context.Init();
 
         glfwSetWindowUserPointer(window, &data);
         glfwSwapInterval(1);
@@ -131,9 +129,9 @@ namespace rpe {
         });
     }
 
-    void Window::Update() const {
+    void Window::Update() {
         glfwPollEvents();
-        glfwSwapBuffers(window);
+        context.SwapBuffers();
 
         glClearColor(0.1f, 0.2f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);

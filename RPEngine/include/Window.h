@@ -1,8 +1,8 @@
 #pragma once
 #include "Event.h"
 #include "Logger.h"
+#include "OpenGLContext.h"
 
-#include "glad/glad.h"
 #include "GLFW/glfw3.h"
 
 namespace rpe {
@@ -13,7 +13,7 @@ namespace rpe {
         explicit Window(std::string title = "Rainbow powered app", int width = 800, int height = 600);
 
         void Init();
-        void Update() const;
+        void Update();
         void Destroy() const;
 
         GLFWwindow* getWindow() const { return window; }
@@ -40,6 +40,7 @@ namespace rpe {
             EventCallbackFn eventCallback;
         };
 
+        OpenGLContext context = nullptr;
         windowData data;
     };
 }
