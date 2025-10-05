@@ -30,6 +30,8 @@ namespace rpe {
         LayerStack layers;
 
         static Application* instance;
+
+        unsigned int VAO, VBO, IndexBuffer;
     };
 }
 
