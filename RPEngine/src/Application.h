@@ -3,6 +3,7 @@
 #include "Core.h"
 #include "Layer.h"
 #include "Logger.h"
+#include "Shader.h"
 #include "Window.h"
 #include "ImGui/ImGuiLayer.h"
 
@@ -25,6 +26,8 @@ namespace rpe {
         static Application& GetApplication() { return *instance; }
     private:
         std::unique_ptr<Window> window;
+        std::unique_ptr<Shader> shader;
+
         ImGuiLayer* imguiLayer;
         bool running = false;
         LayerStack layers;

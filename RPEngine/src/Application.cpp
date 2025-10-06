@@ -2,20 +2,17 @@
 
 #include <memory>
 
-#include "Input.h"
-
 namespace rpe {
     Application* Application::instance = nullptr;
 
     Application::Application() {
         RPE_CORE_INFO("Creating application");
 
-        if (Application::instance) {
+        if (instance) {
             RPE_CORE_WARN("Application already exists");
             return;
         }
-
-        Application::instance = this;
+        instance = this;
 
         window = std::make_unique<Window>();
         window->Init();
@@ -48,6 +45,9 @@ namespace rpe {
         glGenBuffers(1, &IndexBuffer);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IndexBuffer);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+        shader = std::make_unique<Shader>("assets/shaders/default.glsl");
+        shader->Bind();
     }
     Application::~Application() {
         running = false;
@@ -74,7 +74,7 @@ namespace rpe {
 
         running = true;
         while (running) {
-            glClearColor(0.1f, 0.2f, 0.1f, 1.0f);
+            glClearColor(0.11f, 0.11f, 0.18f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT);
             glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, nullptr);
 

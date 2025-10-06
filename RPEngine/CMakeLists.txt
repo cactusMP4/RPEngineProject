@@ -11,6 +11,8 @@ add_library(RPEngine SHARED
         src/Input.h
         src/Input.cpp
         src/OpenGLContext.cpp
+        src/Shader.cpp
+        src/Shader.h
 )
 
 target_precompile_headers(RPEngine PUBLIC include/rpepch.h)
@@ -42,12 +44,4 @@ target_link_libraries(RPEngine PUBLIC
 )
 
 target_compile_features(RPEngine PRIVATE cxx_std_17)
-
 target_compile_definitions(RPEngine PRIVATE RPE_BUILD_DLL)
-
-# Put RPEngine outputs into its own bin/bin-int folder
-set_target_properties(RPEngine PROPERTIES
-        ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin-int/RPEngine
-        LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/RPEngine
-        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/RPEngine
-)
