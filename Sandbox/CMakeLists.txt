@@ -5,17 +5,9 @@ add_executable(Sandbox
         src/Sandbox.cpp
 )
 
-# Link Sandbox against RPEngine
 target_link_libraries(Sandbox PRIVATE RPEngine)
-
-# Include engine headers
 target_include_directories(Sandbox PRIVATE
         ${CMAKE_SOURCE_DIR}/RPEngine/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/spdlog/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/GLFW/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/Glad/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/ImGui/src
-        ${CMAKE_CURRENT_SOURCE_DIR}/3dParty/glm
 )
 
 target_compile_features(Sandbox PRIVATE cxx_std_17)
