@@ -2,11 +2,11 @@
 
 #pragma once
 
-#include "Application.h"
-#include "Logger.h"
-#include "Window.h"
-#include "Event.h"
-#include "Layer.h"
-#include "Input.h"
+#include "../src/Application.h"
+#include "../src/Logger.h"
+#include "../src/Window.h"
+#include "../src/Event.h"
+#include "../src/Layer.h"
+#include "../src/Input.h"
 #include "imgui.h"
-#include "ImGui/ImGuiLayer.h"
+#include "../src/ImGui/ImGuiLayer.h"

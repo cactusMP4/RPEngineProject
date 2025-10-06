@@ -8,7 +8,7 @@ add_library(RPEngine SHARED
         src/Layer.cpp
         src/ImGui/ImGuiLayer.cpp
         src/ImGui/ImGuiBuild.cpp
-        include/Input.h
+        src/Input.h
         src/Input.cpp
         src/OpenGLContext.cpp
 )

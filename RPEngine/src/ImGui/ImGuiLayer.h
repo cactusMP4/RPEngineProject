@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Core.h"
-#include "Layer.h"
+#include "../Core.h"
+#include "../Layer.h"
 
 namespace rpe {
 	class RPE_API ImGuiLayer : public Layer {
