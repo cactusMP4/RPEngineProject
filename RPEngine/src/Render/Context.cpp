@@ -1,9 +1,9 @@
-#include "OpenGLContext.h"
+#include "Context.h"
 
-#include "Logger.h"
+#include "../Logger.h"
 
 namespace rpe {
-    void OpenGLContext::Init() {
+    void Context::Init() const {
         glfwMakeContextCurrent(window);
         if (const int success = gladLoadGLLoader(reinterpret_cast<GLADloadproc>(glfwGetProcAddress)); !success) {
             RPE_CORE_ERROR("Failed to initialize GLAD: {0}", success);
@@ -15,7 +15,7 @@ namespace rpe {
         RPE_CORE_INFO("    Renderer: {0}", reinterpret_cast<const char*>(glGetString(GL_RENDERER)));
         RPE_CORE_INFO("    Version: {0}", reinterpret_cast<const char*>(glGetString(GL_VERSION)));
     }
-    void OpenGLContext::SwapBuffers() {
+    void Context::SwapBuffers() const {
         glfwSwapBuffers(window);
     }
 }

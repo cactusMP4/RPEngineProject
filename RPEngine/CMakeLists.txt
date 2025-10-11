@@ -10,9 +10,11 @@ add_library(RPEngine SHARED
         src/ImGui/ImGuiBuild.cpp
         src/Input.h
         src/Input.cpp
-        src/OpenGLContext.cpp
+        src/Render/Context.cpp
         src/Shader.cpp
         src/Shader.h
+        src/Render/Buffer.cpp
+        src/Render/Buffer.h
 )
 
 target_precompile_headers(RPEngine PUBLIC include/rpepch.h)

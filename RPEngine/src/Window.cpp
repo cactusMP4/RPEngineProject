@@ -37,7 +37,7 @@ namespace rpe {
             return;
         }
 
-        context = OpenGLContext(window);
+        context = Context(window);
         context.Init();
 
         glfwSetWindowUserPointer(window, &data);

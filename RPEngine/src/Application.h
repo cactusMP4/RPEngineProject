@@ -6,6 +6,7 @@
 #include "Shader.h"
 #include "Window.h"
 #include "ImGui/ImGuiLayer.h"
+#include "Render/Buffer.h"
 
 #define RPE_BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
 
@@ -34,7 +35,9 @@ namespace rpe {
 
         static Application* instance;
 
-        unsigned int VAO, VBO, IndexBuffer;
+        unsigned int VAO;
+        std::unique_ptr<VertexBuffer> vertexBuffer;
+        std::unique_ptr<IndexBuffer> indexBuffer;
     };
 }
 

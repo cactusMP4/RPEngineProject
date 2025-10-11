@@ -1,7 +1,7 @@
 #pragma once
 #include "Event.h"
 #include "Logger.h"
-#include "OpenGLContext.h"
+#include "Render/Context.h"
 
 #include "GLFW/glfw3.h"
 
@@ -15,8 +15,6 @@ namespace rpe {
         void Init();
         void Update();
         void Destroy() const;
-
-        GLFWwindow* getWindow() const { return window; }
 
         int GetWidth() const { return data.width; }
         void SetWidth(const int newWidth) { data.width = newWidth; }
@@ -40,7 +38,7 @@ namespace rpe {
             EventCallbackFn eventCallback;
         };
 
-        OpenGLContext context = nullptr;
+        Context context = nullptr;
         windowData data;
     };
 }
