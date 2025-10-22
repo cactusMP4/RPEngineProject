@@ -41,6 +41,10 @@ target_link_libraries(RPEngine PRIVATE
         glfw
         glad
 )
+if(WIN32)
+    target_compile_definitions(imgui PRIVATE "IMGUI_API=__declspec(dllexport)")
+endif()
+
 target_link_libraries(RPEngine PUBLIC
         imgui
 )
