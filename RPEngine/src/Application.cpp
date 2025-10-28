@@ -37,8 +37,8 @@ namespace rpe {
             {ShaderDataType::Float3, "a_Pos"},
 		};
 
-		vertexArray->AddVertexBuffer(vertexBuffer);
         vertexBuffer->SetLayout(layout);
+		vertexArray->AddVertexBuffer(vertexBuffer);
 
         //Index Buffer
         unsigned int indices[] = {0, 1, 2};
