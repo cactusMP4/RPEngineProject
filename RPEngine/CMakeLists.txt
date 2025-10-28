@@ -15,7 +15,7 @@ add_library(RPEngine SHARED
         "src/Render/Shader.h"
         src/Render/Buffer.cpp
         src/Render/Buffer.h
- "src/Render/BufferLayout.h")
+ "src/Render/BufferLayout.h" "src/Render/VertexArray.cpp")
 
 target_precompile_headers(RPEngine PUBLIC include/rpepch.h)
 

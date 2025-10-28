@@ -7,6 +7,7 @@
 #include "Window.h"
 #include "ImGui/ImGuiLayer.h"
 #include "Render/Buffer.h"
+#include "Render/VertexArray.h"
 
 #define RPE_BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
 
@@ -26,18 +27,19 @@ namespace rpe {
         Window& GetWindow() const { return *window; }
         static Application& GetApplication() { return *instance; }
     private:
-        std::unique_ptr<Window> window;
-        std::unique_ptr<Shader> shader;
+        static Application* instance;
+        bool running = false;
+
+        std::shared_ptr<Window> window;
 
         ImGuiLayer* imguiLayer;
-        bool running = false;
         LayerStack layers;
 
-        static Application* instance;
-
-        unsigned int VAO;
-        std::unique_ptr<VertexBuffer> vertexBuffer;
-        std::unique_ptr<IndexBuffer> indexBuffer;
+        std::shared_ptr<Shader> shader;
+        
+		std::shared_ptr<VertexArray> vertexArray;
+        std::shared_ptr<VertexBuffer> vertexBuffer;
+        std::shared_ptr<IndexBuffer> indexBuffer;
     };
 }
 

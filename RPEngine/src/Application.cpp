@@ -22,8 +22,7 @@ namespace rpe {
         PushOverlay(imguiLayer);
 
         //VAO
-        glGenVertexArrays(1, &VAO);
-        glBindVertexArray(VAO);
+		vertexArray = std::make_unique<VertexArray>();
 
         //VBO
         float vertices[] = {
@@ -37,24 +36,15 @@ namespace rpe {
 		BufferLayout layout = {
             {ShaderDataType::Float3, "a_Pos"},
 		};
-        
-		int index = 0;
-        for (const BufferElement& element : layout.GetElements()) {
-            glEnableVertexAttribArray(index);
-            glVertexAttribPointer(
-                index,
-                element.GetComponentCount(),
-                element.GetGLenumType(),
-                element.normalized,
-                layout.GetStride(),
-				(const void*)element.offset
-            );
-        }
+
+		vertexArray->AddVertexBuffer(vertexBuffer);
+        vertexBuffer->SetLayout(layout);
 
         //Index Buffer
         unsigned int indices[] = {0, 1, 2};
 
         indexBuffer = std::make_unique<IndexBuffer>(indices, sizeof(indices)/sizeof(unsigned int));
+		vertexArray->SetIndexBuffer(indexBuffer);
 
         shader = std::make_unique<Shader>("assets/shaders/default.glsl");
         shader->Bind();
