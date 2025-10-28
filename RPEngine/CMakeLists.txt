@@ -11,11 +11,11 @@ add_library(RPEngine SHARED
         src/Input.h
         src/Input.cpp
         src/Render/Context.cpp
-        src/Shader.cpp
-        src/Shader.h
+        "src/Render/Shader.cpp"
+        "src/Render/Shader.h"
         src/Render/Buffer.cpp
         src/Render/Buffer.h
-)
+ "src/Render/BufferLayout.h")
 
 target_precompile_headers(RPEngine PUBLIC include/rpepch.h)
 

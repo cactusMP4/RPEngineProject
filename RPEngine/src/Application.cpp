@@ -34,8 +34,22 @@ namespace rpe {
 
         vertexBuffer = std::make_unique<VertexBuffer>(vertices, sizeof(vertices));
 
-        glEnableVertexAttribArray(0);
-        glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 3 * sizeof(float), nullptr);
+		BufferLayout layout = {
+            {ShaderDataType::Float3, "a_Pos"},
+		};
+        
+		int index = 0;
+        for (const BufferElement& element : layout.GetElements()) {
+            glEnableVertexAttribArray(index);
+            glVertexAttribPointer(
+                index,
+                element.GetComponentCount(),
+                element.GetGLenumType(),
+                element.normalized,
+                layout.GetStride(),
+				(const void*)element.offset
+            );
+        }
 
         //Index Buffer
         unsigned int indices[] = {0, 1, 2};

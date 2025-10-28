@@ -3,7 +3,7 @@
 #include <fstream>
 #include <glad/glad.h>
 
-#include "Logger.h"
+#include "../Logger.h"
 
 namespace rpe {
     Shader::Shader(const std::string& filePath) {
