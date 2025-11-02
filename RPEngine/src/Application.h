@@ -35,13 +35,6 @@ namespace rpe {
 
         ImGuiLayer* imguiLayer;
         LayerStack layers;
-
-        std::shared_ptr<Shader> shader;
-        Camera camera;
-        
-		std::shared_ptr<VertexArray> vertexArray;
-        std::shared_ptr<VertexBuffer> vertexBuffer;
-        std::shared_ptr<IndexBuffer> indexBuffer;
     };
 }
 

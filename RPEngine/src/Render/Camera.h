@@ -6,7 +6,7 @@
 namespace rpe {
     class Camera {
     public:
-        Camera(const float fov = 65, const float aspectRatio = 1, const float viewDistance = 1000)
+        Camera(const float fov = 65, const float aspectRatio = 4.0f/3.0f, const float viewDistance = 1000)
             :FOV(fov), aspectRatio(aspectRatio), viewDistance(viewDistance) {}
 
         void SetPosition(const glm::vec3 &pos) {position = pos;}

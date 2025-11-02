@@ -24,43 +24,6 @@ namespace rpe {
 
         imguiLayer = new ImGuiLayer();
         PushOverlay(imguiLayer);
-
-        //VAO
-		vertexArray = std::make_unique<VertexArray>();
-
-        //VBO
-        float vertices[] = {
-            //positon               //color
-            -0.2f, -0.2f,  0.0f,    1.0f, 0.0f, 0.0f, 0.0f,
-            -0.2f,  0.2f,  0.0f,    0.0f, 1.0f, 0.0f, 0.0f,
-             0.2f,  0.2f,  0.0f,    0.0f, 0.0f, 1.0f, 0.0f,
-             0.2f, -0.2f,  0.0f,    1.0f, 0.0f, 1.0f, 0.0f,
-        };
-
-        vertexBuffer = std::make_unique<VertexBuffer>(vertices, sizeof(vertices));
-
-		BufferLayout layout = {
-            {ShaderDataType::Float3, "a_Pos"},
-            {ShaderDataType::Float4, "a_Color"},
-		};
-
-        vertexBuffer->SetLayout(layout);
-		vertexArray->AddVertexBuffer(vertexBuffer);
-
-        //Index Buffer
-        unsigned int indices[] = {
-            0, 1, 2,
-            0, 2, 3
-        };
-
-        indexBuffer = std::make_unique<IndexBuffer>(indices, sizeof(indices)/sizeof(unsigned int));
-		vertexArray->SetIndexBuffer(indexBuffer);
-
-        shader = std::make_unique<Shader>("assets/shaders/default.glsl");
-
-        camera = Camera();
-        camera.SetPosition(glm::vec3(0.0f, 0.0f, 1.0f));
-        camera.SetLookDir(glm::vec3(0.0f, 0.0f, -1.0f));
     }
     Application::~Application() {
         running = false;
@@ -89,33 +52,6 @@ namespace rpe {
         while (running) {
             glClearColor(0.11f, 0.11f, 0.18f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT);
-
-            if (Input::IsKeyPressed(GLFW_KEY_W)) {
-                camera.Move(camera.GetLookDir() * 0.01f);
-            }
-            if (Input::IsKeyPressed(GLFW_KEY_A)) {
-                camera.Move(glm::vec4(camera.GetLookDir(), 1.0f) * glm::rotate(glm::mat4(1.0f), -static_cast<float>(M_PI_2), glm::vec3(0.0f, 1.0f, 0.0f)) * 0.01f);
-            }
-            if (Input::IsKeyPressed(GLFW_KEY_S)) {
-                camera.Move(-camera.GetLookDir() * 0.01f);
-            }
-            if (Input::IsKeyPressed(GLFW_KEY_D)) {
-                camera.Move(glm::vec4(camera.GetLookDir(), 1.0f) * glm::rotate(glm::mat4(1.0f), static_cast<float>(M_PI_2), glm::vec3(0.0f, 1.0f, 0.0f)) * 0.01f);
-            }
-
-            if (Input::IsKeyPressed(GLFW_KEY_LEFT)) {
-                camera.SetLookDir(glm::vec4(camera.GetLookDir(), 1.0f) * glm::rotate(glm::mat4(1.0f), -0.01f, glm::vec3(0.0f, 1.0f, 0.0f)));
-            }
-            if (Input::IsKeyPressed(GLFW_KEY_RIGHT)) {
-                camera.SetLookDir(glm::vec4(camera.GetLookDir(), 1.0f) * glm::rotate(glm::mat4(1.0f), 0.01f, glm::vec3(0.0f, 1.0f, 0.0f)));
-            }
-
-
-            Renderer::BeginScene(camera);
-
-            Renderer::Submit(vertexArray, shader);
-
-            Renderer::EndScene();
 
             imguiLayer->Begin();
             for (Layer* layer : layers) {
