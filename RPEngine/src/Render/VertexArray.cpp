@@ -31,10 +31,10 @@ namespace rpe {
 			glEnableVertexAttribArray(index);
 			glVertexAttribPointer(
 				index,
-				element.GetComponentCount(),
+				static_cast<GLint>(element.GetComponentCount()),
 				element.GetGLenumType(),
 				element.normalized,
-				layout.GetStride(),
+				static_cast<GLsizei>(layout.GetStride()),
 				(const void*)element.offset
 			);
 			index++;

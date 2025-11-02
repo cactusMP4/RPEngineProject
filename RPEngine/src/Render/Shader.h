@@ -1,4 +1,5 @@
 #pragma once
+#include "glm/fwd.hpp"
 
 namespace rpe {
     class Shader {
@@ -8,6 +9,8 @@ namespace rpe {
 
         void Bind() const;
         void Unbind() const;
+
+        void UploadUniform(const std::string& name, const glm::mat4& matrix) const;
     private:
         unsigned int renderID;
     };

@@ -8,6 +8,7 @@
 #include "ImGui/ImGuiLayer.h"
 #include "Render/Buffer.h"
 #include "Render/VertexArray.h"
+#include "Render/Camera.h"
 
 #define RPE_BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
 
@@ -36,6 +37,7 @@ namespace rpe {
         LayerStack layers;
 
         std::shared_ptr<Shader> shader;
+        Camera camera;
         
 		std::shared_ptr<VertexArray> vertexArray;
         std::shared_ptr<VertexBuffer> vertexBuffer;
