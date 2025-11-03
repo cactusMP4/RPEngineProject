@@ -3,11 +3,21 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+#include "../Application.h"
+
 namespace rpe {
+    enum class CameraProjection {Orthographic, Perspective};
+
     class Camera {
     public:
-        Camera(const float fov = 65, const float aspectRatio = 4.0f/3.0f, const float viewDistance = 1000)
-            :FOV(fov), aspectRatio(aspectRatio), viewDistance(viewDistance) {}
+        Camera(
+            const float fov = 65,
+            const float viewDistance = 1000,
+            const CameraProjection perspective = CameraProjection::Perspective
+        ) : FOV(fov), viewDistance(viewDistance), projection(perspective) {
+            const Window& window = Application::GetApplication().GetWindow();
+            aspectRatio = static_cast<float>(window.GetWidth()) / static_cast<float>(window.GetHeight());
+        }
 
         void SetPosition(const glm::vec3 &pos) {position = pos;}
         void SetLookDir(const glm::vec3 &dir) {lookDir = glm::normalize(dir);}
@@ -15,6 +25,8 @@ namespace rpe {
         void SetFov(const float fov) {FOV = fov;}
         void SetAspectRatio(const float ar) {aspectRatio = ar;}
         void SetViewDistance(const float distance) {viewDistance = distance;}
+
+        void SetPerspective(const CameraProjection proj) {projection = proj;}
 
 
         const glm::vec3& GetPosition() const { return position; }
@@ -24,6 +36,8 @@ namespace rpe {
         float GetAspectRatio() const { return aspectRatio; }
         float GetViewDistance() const { return viewDistance; }
 
+        CameraProjection GetProjection() const { return projection; }
+
 
         void Move(const glm::vec3 &pos) {position += pos;}
 
@@ -32,7 +46,12 @@ namespace rpe {
             return glm::lookAt(position, position + lookDir, glm::vec3(0.0f, 1.0f, 0.0f));
         }
         glm::mat4 GetProjectionMatrix() const {
-            return glm::perspective(glm::radians(FOV), aspectRatio, 0.1f, viewDistance);
+            switch (projection) {
+                case CameraProjection::Orthographic:
+                    return glm::ortho(-1.0f, 1.0f, -1.0f/aspectRatio, 1.0f/aspectRatio, 0.0f, viewDistance);
+                case CameraProjection::Perspective:
+                    return glm::perspective(glm::radians(FOV), aspectRatio, 0.1f, viewDistance);
+            }
         }
 
         glm::mat4 GetViewProjMatrix() const {
@@ -45,5 +64,7 @@ namespace rpe {
         float FOV;
         float aspectRatio;
         float viewDistance;
+
+        CameraProjection projection;
     };
 }
