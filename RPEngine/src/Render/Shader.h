@@ -1,8 +1,10 @@
 #pragma once
+
+#include "../Core.h"
 #include "glm/fwd.hpp"
 
 namespace rpe {
-    class Shader {
+    class RPE_API Shader {
     public:
         Shader(const std::string& filePath);
         ~Shader();
