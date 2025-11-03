@@ -4,6 +4,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 #include "../Application.h"
+#include "../Core/Transform.h"
 
 namespace rpe {
     enum class CameraProjection {Orthographic, Perspective};
@@ -19,9 +20,6 @@ namespace rpe {
             aspectRatio = static_cast<float>(window.GetWidth()) / static_cast<float>(window.GetHeight());
         }
 
-        void SetPosition(const glm::vec3 &pos) {position = pos;}
-        void SetLookDir(const glm::vec3 &dir) {lookDir = glm::normalize(dir);}
-
         void SetFov(const float fov) {FOV = fov;}
         void SetAspectRatio(const float ar) {aspectRatio = ar;}
         void SetViewDistance(const float distance) {viewDistance = distance;}
@@ -29,8 +27,7 @@ namespace rpe {
         void SetPerspective(const CameraProjection proj) {projection = proj;}
 
 
-        const glm::vec3& GetPosition() const { return position; }
-        const glm::vec3& GetLookDir() const { return lookDir; }
+        Transform& GetTransform() { return transform; }
 
         float GetFov() const { return FOV; }
         float GetAspectRatio() const { return aspectRatio; }
@@ -38,12 +35,8 @@ namespace rpe {
 
         CameraProjection GetProjection() const { return projection; }
 
-
-        void Move(const glm::vec3 &pos) {position += pos;}
-
-
         glm::mat4 GetViewMatrix() const {
-            return glm::lookAt(position, position + lookDir, glm::vec3(0.0f, 1.0f, 0.0f));
+            return glm::lookAt(transform.GetPosition(), transform.GetPosition() + transform.GetLookDir(), glm::vec3(0.0f, 1.0f, 0.0f));
         }
         glm::mat4 GetProjectionMatrix() const {
             switch (projection) {
@@ -58,8 +51,7 @@ namespace rpe {
             return GetProjectionMatrix() * GetViewMatrix();
         }
     private:
-        glm::vec3 position = glm::vec3(0, 0, 0);
-        glm::vec3 lookDir = glm::vec3(0, 0, -1);
+        Transform transform;
 
         float FOV;
         float aspectRatio;

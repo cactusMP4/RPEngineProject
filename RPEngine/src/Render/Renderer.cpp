@@ -9,10 +9,10 @@ namespace rpe {
 
     }
 
-    void Renderer::Submit(const std::shared_ptr<VertexArray>& vertex_array, const std::shared_ptr<Shader>& shader, const glm::mat4& transform) {
+    void Renderer::Submit(const std::shared_ptr<VertexArray>& vertex_array, const std::shared_ptr<Shader>& shader, const Transform& transform) {
         shader->Bind();
         shader->UploadUniform("u_ViewProjMat", data->ViewProjectionMatrix);
-        shader->UploadUniform("u_TransformMat", transform);
+        shader->UploadUniform("u_TransformMat", transform.GetTransformMat());
 
         vertex_array->Bind();
         const auto count = static_cast<GLsizei>(vertex_array->GetIndexBuffer()->GetCount());

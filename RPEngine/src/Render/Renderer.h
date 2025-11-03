@@ -14,7 +14,7 @@ namespace rpe {
         static void Submit(
             const std::shared_ptr<VertexArray>& vertex_array,
             const std::shared_ptr<Shader>& shader,
-            const glm::mat4& transform = glm::mat4(1.0f)
+            const Transform& transform = Transform()
         );
     private:
         struct SceneData {

@@ -6,7 +6,7 @@ std::shared_ptr<rpe::IndexBuffer> indexBuffer;
 std::shared_ptr<rpe::Shader> shader;
 std::shared_ptr<rpe::Camera> camera;
 
-glm::mat4 squareTransform = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.2f, 0.0f));
+rpe::Transform squareTransform;
 
 class ExampleLayer : public rpe::Layer {
 public:
@@ -49,47 +49,48 @@ public:
         shader = std::make_unique<rpe::Shader>("assets/shaders/default.glsl");
 
         camera = std::make_unique<rpe::Camera>();
-        camera->SetPosition(glm::vec3(0.0f, 0.0f, 1.0f));
-        camera->SetLookDir(glm::vec3(0.0f, 0.0f, -1.0f));
+        camera->GetTransform().SetPosition(glm::vec3(0.0f, 0.0f, 1.0f));
+        camera->GetTransform().SetLookDir(glm::vec3(0.0f, 0.0f, -1.0f));
     }
 
     void Update(rpe::TimeStep dt) override {
         if (rpe::Input::IsKeyPressed(GLFW_KEY_W)) {
-            camera->Move(camera->GetLookDir() * 0.01f);
+            camera->GetTransform().Move(camera->GetTransform().GetLookDir() * 0.01f);
         }
         if (rpe::Input::IsKeyPressed(GLFW_KEY_A)) {
-            camera->Move(
-                glm::vec4(camera->GetLookDir(), 1.0f)
+            camera->GetTransform().Move(
+                glm::vec4(camera->GetTransform().GetLookDir(), 1.0f)
                 * glm::rotate(glm::mat4(1.0f), glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0f))
                 * dt.GetTimeS()
             );
         }
         if (rpe::Input::IsKeyPressed(GLFW_KEY_S)) {
-            camera->Move(-camera->GetLookDir() * 0.01f);
+            camera->GetTransform().Move(-camera->GetTransform().GetLookDir() * 0.01f);
         }
         if (rpe::Input::IsKeyPressed(GLFW_KEY_D)) {
-            camera->Move(
-                glm::vec4(camera->GetLookDir(), 1.0f)
+            camera->GetTransform().Move(
+                glm::vec4(camera->GetTransform().GetLookDir(), 1.0f)
                 * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f))
                 * dt.GetTimeS()
             );
         }
 
         if (rpe::Input::IsKeyPressed(GLFW_KEY_LEFT)) {
-            camera->SetLookDir(
-                glm::vec4(camera->GetLookDir(), 1.0f)
+            camera->GetTransform().SetLookDir(
+                glm::vec4(camera->GetTransform().GetLookDir(), 1.0f)
                 * glm::rotate(glm::mat4(1.0f), -0.01f, glm::vec3(0.0f, 1.0f, 0.0f))
             );
         }
         if (rpe::Input::IsKeyPressed(GLFW_KEY_RIGHT)) {
-            camera->SetLookDir(
-                glm::vec4(camera->GetLookDir(), 1.0f)
+            camera->GetTransform().SetLookDir(
+                glm::vec4(camera->GetTransform().GetLookDir(), 1.0f)
                 * glm::rotate(glm::mat4(1.0f), 0.01f, glm::vec3(0.0f, 1.0f, 0.0f))
             );
         }
 
         rpe::Renderer::BeginScene(*camera);
 
+        squareTransform.SetPosition(glm::vec3(0.0f, sin(glfwGetTime()) * 0.2f, 0.0f));
         rpe::Renderer::Submit(vertexArray, shader, squareTransform);
 
         rpe::Renderer::EndScene();
