@@ -45,6 +45,9 @@ namespace rpe {
                 case CameraProjection::Perspective:
                     return glm::perspective(glm::radians(FOV), aspectRatio, 0.1f, viewDistance);
             }
+
+            RPE_CORE_ERROR("Unknown projection type!");
+            return {1.0f};
         }
 
         glm::mat4 GetViewProjMatrix() const {

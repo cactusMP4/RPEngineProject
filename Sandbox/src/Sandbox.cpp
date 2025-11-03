@@ -21,6 +21,13 @@ public:
         //VBO
         float vertices[] = {
             //positon               //color
+            -0.5f, -0.5f,  0.0f,    1.0f, 0.0f, 0.0f, 0.0f,
+            -0.5f,  0.5f,  0.0f,    0.0f, 1.0f, 0.0f, 0.0f,
+             0.5f,  0.5f,  0.0f,    0.0f, 0.0f, 1.0f, 0.0f,
+             0.5f, -0.5f,  0.0f,    1.0f, 0.0f, 1.0f, 0.0f,
+
+            //hole
+            //positon               //color
             -0.2f, -0.2f,  0.0f,    1.0f, 0.0f, 0.0f, 0.0f,
             -0.2f,  0.2f,  0.0f,    0.0f, 1.0f, 0.0f, 0.0f,
              0.2f,  0.2f,  0.0f,    0.0f, 0.0f, 1.0f, 0.0f,
@@ -39,8 +46,17 @@ public:
 
         //Index Buffer
         unsigned int indices[] = {
-            0, 1, 2,
-            0, 2, 3
+            0, 1, 5,
+            0, 5, 4,
+
+            1, 2, 6,
+            1, 6, 5,
+
+            2, 3, 7,
+            2, 7, 6,
+
+            3, 0, 4,
+            3, 4, 7,
         };
 
         indexBuffer = std::make_unique<rpe::IndexBuffer>(indices, sizeof(indices)/sizeof(unsigned int));
