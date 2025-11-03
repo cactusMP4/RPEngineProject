@@ -51,7 +51,7 @@ public:
         camera.SetLookDir(glm::vec3(0.0f, 0.0f, -1.0f));
     }
 
-    void Update() override {
+    void Update(rpe::TimeStep dt) override {
         if (rpe::Input::IsKeyPressed(GLFW_KEY_W)) {
             camera.Move(camera.GetLookDir() * 0.01f);
         }
@@ -59,7 +59,7 @@ public:
             camera.Move(
                 glm::vec4(camera.GetLookDir(), 1.0f)
                 * glm::rotate(glm::mat4(1.0f), glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0f))
-                * 0.01f
+                * dt.GetTimeS()
             );
         }
         if (rpe::Input::IsKeyPressed(GLFW_KEY_S)) {
@@ -69,7 +69,7 @@ public:
             camera.Move(
                 glm::vec4(camera.GetLookDir(), 1.0f)
                 * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f))
-                * 0.01f
+                * dt.GetTimeS()
             );
         }
 
@@ -92,7 +92,7 @@ public:
 
         rpe::Renderer::EndScene();
     }
-    void RenderImGui() override {
+    void RenderImGui(rpe::TimeStep dt) override {
 		ImGui::Begin("Hello, RPEngine!");
 		ImGui::LabelText("", "XD");
 		ImGui::End();

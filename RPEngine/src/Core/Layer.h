@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "Event.h"
+#include "TimeStep.h"
 
 namespace rpe {
     class RPE_API Layer {
@@ -11,8 +12,8 @@ namespace rpe {
 
         virtual void Attach() {}
         virtual void Detach() {}
-        virtual void Update() {}
-        virtual void RenderImGui() {}
+        virtual void Update(TimeStep dt) {}
+        virtual void RenderImGui(TimeStep dt) {}
         virtual void OnEvent(Event& event) {}
 
         const std::string& GetName() const { return debugName; }

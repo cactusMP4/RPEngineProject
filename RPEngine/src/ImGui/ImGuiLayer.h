@@ -12,7 +12,7 @@ namespace rpe {
 
 		void Attach() override;
 		void Detach() override;
-		void RenderImGui() override;
+		void RenderImGui(TimeStep dt) override;
 
 		void Begin();
 		void End();

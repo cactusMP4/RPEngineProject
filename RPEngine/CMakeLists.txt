@@ -19,6 +19,7 @@ add_library(RPEngine SHARED
         src/Render/Renderer.cpp
         src/Render/Renderer.h
         src/Render/Camera.h
+        src/Core/TimeStep.h
 )
 
 target_precompile_headers(RPEngine PUBLIC include/rpepch.h)

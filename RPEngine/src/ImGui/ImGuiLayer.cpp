@@ -69,7 +69,7 @@ namespace rpe {
 		}
 	}
 
-	void ImGuiLayer::RenderImGui() {
+	void ImGuiLayer::RenderImGui(TimeStep dt) {
 		ImGui::ShowDemoWindow();
 	}
 }

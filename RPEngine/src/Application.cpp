@@ -3,6 +3,7 @@
 #include <memory>
 
 #include "Core/Input.h"
+#include "Core/TimeStep.h"
 #include "Render/Camera.h"
 #include "Render/Renderer.h"
 
@@ -49,14 +50,20 @@ namespace rpe {
         RPE_CORE_INFO("Running app...");
 
         running = true;
+
+        float lastFrameTime = 0.0f;
         while (running) {
             glClearColor(0.11f, 0.11f, 0.18f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT);
 
+            const auto currentTime = static_cast<float>(glfwGetTime());
+            TimeStep deltaTime = currentTime - lastFrameTime;
+            lastFrameTime = currentTime;
+
             imguiLayer->Begin();
             for (Layer* layer : layers) {
-                layer->Update();
-                layer->RenderImGui();
+                layer->Update(deltaTime);
+                layer->RenderImGui(deltaTime);
             }
             imguiLayer->End();
 
