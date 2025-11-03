@@ -1,6 +1,6 @@
 #include "Input.h"
 
-#include "Application.h"
+#include "../Application.h"
 
 namespace rpe {
     bool Input::IsKeyPressed(const int key) {

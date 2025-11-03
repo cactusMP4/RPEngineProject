@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Core.h"
-#include "Layer.h"
-#include "Logger.h"
+#include "Core/Core.h"
+#include "Core/Layer.h"
+#include "Core/Logger.h"
 #include "Render/Shader.h"
 #include "Window.h"
 #include "ImGui/ImGuiLayer.h"

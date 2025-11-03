@@ -1,6 +1,6 @@
 #pragma once
-#include "Event.h"
-#include "Logger.h"
+#include "Core/Event.h"
+#include "Core/Logger.h"
 #include "Render/Context.h"
 
 #include "GLFW/glfw3.h"

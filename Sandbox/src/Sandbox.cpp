@@ -58,7 +58,7 @@ public:
         if (rpe::Input::IsKeyPressed(GLFW_KEY_A)) {
             camera.Move(
                 glm::vec4(camera.GetLookDir(), 1.0f)
-                * glm::rotate(glm::mat4(1.0f), static_cast<float>(glm::radians(-90.0f)), glm::vec3(0.0f, 1.0f, 0.0f))
+                * glm::rotate(glm::mat4(1.0f), glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0f))
                 * 0.01f
             );
         }
@@ -68,16 +68,22 @@ public:
         if (rpe::Input::IsKeyPressed(GLFW_KEY_D)) {
             camera.Move(
                 glm::vec4(camera.GetLookDir(), 1.0f)
-                * glm::rotate(glm::mat4(1.0f), static_cast<float>(glm::radians(90.0f)), glm::vec3(0.0f, 1.0f, 0.0f))
+                * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f))
                 * 0.01f
             );
         }
 
         if (rpe::Input::IsKeyPressed(GLFW_KEY_LEFT)) {
-            camera.SetLookDir(glm::vec4(camera.GetLookDir(), 1.0f) * glm::rotate(glm::mat4(1.0f), -0.01f, glm::vec3(0.0f, 1.0f, 0.0f)));
+            camera.SetLookDir(
+                glm::vec4(camera.GetLookDir(), 1.0f)
+                * glm::rotate(glm::mat4(1.0f), -0.01f, glm::vec3(0.0f, 1.0f, 0.0f))
+            );
         }
         if (rpe::Input::IsKeyPressed(GLFW_KEY_RIGHT)) {
-            camera.SetLookDir(glm::vec4(camera.GetLookDir(), 1.0f) * glm::rotate(glm::mat4(1.0f), 0.01f, glm::vec3(0.0f, 1.0f, 0.0f)));
+            camera.SetLookDir(
+                glm::vec4(camera.GetLookDir(), 1.0f)
+                * glm::rotate(glm::mat4(1.0f), 0.01f, glm::vec3(0.0f, 1.0f, 0.0f))
+            );
         }
 
         rpe::Renderer::BeginScene(camera);

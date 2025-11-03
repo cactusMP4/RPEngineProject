@@ -2,7 +2,7 @@
 
 #include <memory>
 
-#include "Input.h"
+#include "Core/Input.h"
 #include "Render/Camera.h"
 #include "Render/Renderer.h"
 

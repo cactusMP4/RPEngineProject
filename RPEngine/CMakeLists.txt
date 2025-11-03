@@ -3,13 +3,13 @@ project(RPEngine)
 # Library
 add_library(RPEngine SHARED
         src/Application.cpp
-        src/Logger.cpp
+        src/Core/Logger.cpp
         src/Window.cpp
-        src/Layer.cpp
+        src/Core/Layer.cpp
         src/ImGui/ImGuiLayer.cpp
         src/ImGui/ImGuiBuild.cpp
-        src/Input.h
-        src/Input.cpp
+        src/Core/Input.h
+        src/Core/Input.cpp
         src/Render/Context.cpp
         "src/Render/Shader.cpp"
         "src/Render/Shader.h"

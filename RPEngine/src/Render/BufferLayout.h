@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Logger.h"
+#include "../Core/Logger.h"
 #include <glad/glad.h>
 
 namespace rpe {

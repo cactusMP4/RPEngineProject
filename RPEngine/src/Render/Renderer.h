@@ -1,7 +1,7 @@
 #pragma once
 
 #include "VertexArray.h"
-#include "../Core.h"
+#include "../Core/Core.h"
 #include "Camera.h"
 #include "Shader.h"
 

@@ -4,7 +4,7 @@
 #include <glad/glad.h>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "../Logger.h"
+#include "../Core/Logger.h"
 
 namespace rpe {
     Shader::Shader(const std::string& filePath) {
