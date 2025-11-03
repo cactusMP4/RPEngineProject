@@ -6,6 +6,8 @@ std::shared_ptr<rpe::IndexBuffer> indexBuffer;
 std::shared_ptr<rpe::Shader> shader;
 rpe::Camera camera;
 
+glm::mat4 squareTransform = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.2f, 0.0f));
+
 class ExampleLayer : public rpe::Layer {
 public:
     ExampleLayer() : Layer("ExampleLayer") {}
@@ -88,7 +90,7 @@ public:
 
         rpe::Renderer::BeginScene(camera);
 
-        rpe::Renderer::Submit(vertexArray, shader);
+        rpe::Renderer::Submit(vertexArray, shader, squareTransform);
 
         rpe::Renderer::EndScene();
     }
