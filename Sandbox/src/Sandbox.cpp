@@ -94,19 +94,19 @@ public:
         if (rpe::Input::IsKeyPressed(GLFW_KEY_LEFT)) {
             camera->GetTransform().SetLookDir(
                 glm::vec4(camera->GetTransform().GetLookDir(), 1.0f)
-                * glm::rotate(glm::mat4(1.0f), -0.01f, glm::vec3(0.0f, 1.0f, 0.0f))
+                * glm::rotate(glm::mat4(1.0f), -dt.GetTimeS(), glm::vec3(0.0f, 1.0f, 0.0f))
             );
         }
         if (rpe::Input::IsKeyPressed(GLFW_KEY_RIGHT)) {
             camera->GetTransform().SetLookDir(
                 glm::vec4(camera->GetTransform().GetLookDir(), 1.0f)
-                * glm::rotate(glm::mat4(1.0f), 0.01f, glm::vec3(0.0f, 1.0f, 0.0f))
+                * glm::rotate(glm::mat4(1.0f), dt.GetTimeS(), glm::vec3(0.0f, 1.0f, 0.0f))
             );
         }
 
         rpe::Renderer::BeginScene(*camera);
 
-        squareTransform.SetPosition(glm::vec3(0.0f, sin(glfwGetTime()) * 0.2f, 0.0f));
+        squareTransform.SetPosition(glm::vec3(0.0f, sin(rpe::Time::GetTime().GetTimeS()) * 0.2f, 0.0f));
         rpe::Renderer::Submit(vertexArray, shader, squareTransform);
 
         rpe::Renderer::EndScene();

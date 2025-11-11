@@ -8,7 +8,9 @@
 #include "../src/Core/Event.h"
 #include "../src/Core/Layer.h"
 #include "../src/Core/Input.h"
+#include "../src/Core/Transform.h"
 #include "../src/Core/TimeStep.h"
+#include "../src/Core/Time.h"
 #include "../src/ImGui/ImGuiLayer.h"
 #include "../src/Render/Renderer.h"
 
