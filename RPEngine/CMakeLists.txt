@@ -23,8 +23,6 @@ add_library(RPEngine SHARED
         src/Core/Transform.h
  "src/Core/Time.h" "src/Core/Time.cpp" "src/Render/Camera.cpp")
 
-target_precompile_headers(RPEngine PUBLIC include/rpepch.h)
-
 if(UNIX AND NOT APPLE)
     find_package(X11 REQUIRED)
     target_link_libraries(RPEngine PRIVATE X11::X11)

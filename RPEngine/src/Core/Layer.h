@@ -1,5 +1,8 @@
 #pragma once
 
+#include <string>
+#include <vector>
+
 #include "Core.h"
 #include "Event.h"
 #include "TimeStep.h"

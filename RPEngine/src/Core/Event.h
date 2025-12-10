@@ -1,7 +1,9 @@
 #pragma once
 
+#include <string>
+#include <functional>
+
 #include "Core.h"
-#include "../../include/rpepch.h"
 
 namespace rpe {
 
